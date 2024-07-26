@@ -1,0 +1,37 @@
+{
+  "scripts": {
+    "start": "npx ts-node indexer.ts",
+    "script": "npx ts-node script.ts",
+    "last": "npx ts-node scripts/lastBalances.ts",
+    "lastAll": "npx ts-node scripts/lastBalancesAll.ts",
+    "zeros": "npx ts-node removeZeroz.ts",
+    "balanceAt": "npx ts-node scripts/balanceatBlock.ts",
+    "balances": "npx ts-node scripts/balancesMultipleBlocks.ts",
+    "balancesFast": "npx ts-node scripts/balancesMultipleFaster.ts",
+    "dist": "npx ts-node scripts/distAmounts.ts",
+    "combine": "npx ts-node scripts/combineProofs.ts",
+    "combineAddress": "npx ts-node scripts/combineRoundAddress.ts",
+    "airdrop": "npx ts-node airdrop/airdrop.ts",
+    "allPairBalances": "npx ts-node airdrop/pairAllAddresses.ts",
+    "claimable": "npx ts-node airdrop/claimable.ts",
+    "claimed": "npx ts-node airdrop/claimedFees.ts",
+    "merge": "npx ts-node airdrop/mergeClaims.ts",
+    "feesUSD": "npx ts-node airdrop/feeUSD.ts",
+    "feeTotal": "npx ts-node airdrop/feesTotal.ts",
+    "feeFilter": "npx ts-node airdrop/feeFilter.ts",
+    "volumesTotal": "npx ts-node airdrop/volumeCSV.ts",
+    "processAirdrop": "npx ts-node airdrop/processLatClaims.ts"
+  },
+  "dependencies": {
+    "@apibara/indexer": "^0.1.2",
+    "@apibara/protocol": "^0.4.9",
+    "@apibara/starknet": "^0.4.0",
+    "axios": "^1.6.7",
+    "csv-parser": "^3.0.0",
+    "jsonfile": "^6.1.0",
+    "starknet": "^5.24.3"
+  },
+  "devDependencies": {
+    "@types/jsonfile": "^6.1.4"
+  }
+}
